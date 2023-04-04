@@ -16,6 +16,8 @@ The extension should now be installed and enabled in your Chrome browser.
 ## Credits
 Based on [Andrew Turner's example](https://github.com/ajturner/chrome-opendata-detector) with ChatGPT prompt:
 
-`I want you to build a Chrome Extension. You will write the code as well as build and installation instructions.
+        I want you to build a Chrome Extension. You will write the code as well as build and installation instructions.
 
-The first extension we are going to build should watch the network traffic for any url to the mapbox api with "access_token" in the path. If there is a URL that matches then the extension should show a popover window that includes the value of one access token argument in a URL detected in the network traffic.`
+        The first extension we are going to build should watch the network traffic for any url to the mapbox api with 
+        "access_token" in the path. If there is a URL that matches then the extension should show a popover window that
+        includes the value of one access token argument in a URL detected in the network traffic.
