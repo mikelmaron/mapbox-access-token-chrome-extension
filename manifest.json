@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Mapbox Access Token Extension",
+  "version": "1.0.0",
+  "description": "Watches network traffic for Mapbox API URLs with access token arguments and displays the token value in a popover window.",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "permissions": ["webRequest", "webRequestBlocking", "<all_urls>", "tabs", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
